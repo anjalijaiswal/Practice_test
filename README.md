@@ -16,8 +16,8 @@ I have used rspec for unit testing the class.
 2. ruby version: ruby-2.6.6
 --------------------------------------------------------------------------------
 # Please keep in mind
-Pass log file while initialising the Parser class. like:
-  parser = Parser.new("webserver.log")
+Pass log file path while initialising the Parser class. like:
+  parser = Parser.new("./logs/webserver.log")
 
 The class is exposing following public methods:
 1. list_views: input: you can sort ('ASC' || 'DSC'): it would return an array of hash: [{"/home"=>78}, {"/help_page/1"=>80}, {"/about"=>81}, {"/index"=>82}, {"/contact"=>89}, {"/about/2"=>90}]
